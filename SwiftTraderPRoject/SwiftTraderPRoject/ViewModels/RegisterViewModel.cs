@@ -134,7 +134,7 @@ namespace SwiftTraderPRoject.ViewModels
                         Preferences.Set("Telephone", currentuser.Telephone);
 
                         await Application.Current.MainPage.DisplayAlert("Success!", "Your Registration was succesful", "Ok");
-                        Application.Current.MainPage = new DashBoard();
+                        Application.Current.MainPage = new MainDashBoard();
                     }
                     else { await Application.Current.MainPage.DisplayAlert("Error", "User already exist with the  following credentials", "Ok"); }
                 }
